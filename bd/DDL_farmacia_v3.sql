@@ -1,4 +1,4 @@
-DROP DATABASE IF EXISTS sicefa;
+DROP DATABASE IF EXISTS railway;
 CREATE DATABASE sicefa;
 USE sicefa ;
 
