@@ -1,0 +1,108 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+main {
+  background-image: url(../img/image.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+main::before {
+  content: "";
+  background-image: inherit;
+  filter: blur(10px); /* Ajusta el valor para cambiar el nivel de desenfoque */
+  backdrop-filter: blur(10px);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+#login {
+  width: 500px;
+  height: 600px;
+  background-color: rgba(138, 225, 237, 0.2);
+  border-radius: 30px;
+  /*border: white 4px solid;*/
+  border: black 4px solid;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+form * {
+  text-align: center;
+  /*color: #e3e3e3;*/
+  color: black;
+}
+h1 {
+  padding-top: 30px;
+  font-size: 40px;
+  font-weight: bolder;
+}
+h3 {
+  font-size: 20px;
+}
+label {
+  font-size: 25px;
+  font-weight: bold;
+  padding-top: 25px;
+  margin-bottom: 20px;
+}
+
+#firstLabel {
+  padding-top: 45px;
+}
+
+input {
+  width: 300px;
+  height: 50px;
+  border-radius: 20px;
+  border: none;
+  background-color: #2cb1c7;
+  color: black;
+  text-align: left;
+  padding-left: 25px;
+}
+input:focus-visible {
+  border: none;
+  outline: none;
+}
+
+#btnSubmit {
+  height: 67px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 60px;
+  border-radius: 10px;
+  padding-left: 0px;
+  cursor: pointer;
+}
+#btnSubmit:hover {
+  box-shadow: 5px 10px 4px rgba(0, 0, 0, 0.3);
+}
+@media (max-width: 576px) {
+  #login {
+    width: 300px;
+  }
+  input {
+    width: 250px;
+  }
+  #btnSubmit {
+    font-size: 20px;
+  }
+}
