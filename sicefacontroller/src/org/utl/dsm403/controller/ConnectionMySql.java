@@ -23,9 +23,9 @@ public class ConnectionMySql {
     public Connection openConnection() throws ClassNotFoundException, SQLException{
         Class.forName("com.mysql.cj.jdbc.Driver");
         
-        String url = "jdbc:mysql://roundhouse.proxy.rlwy.net:12520/sicefa";
-        String user = "root";
-        String password = "H6cH-c1e1dedheD3bc-HdFheFgdbff32";
+        String url = "jdbc:mysql://localhost:3306/sicefa";
+        String user = "sicefa";
+        String password = "Administrador";
         
         connection = DriverManager.getConnection(url, user, password);
         return connection;
